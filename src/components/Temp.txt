@@ -1,0 +1,65 @@
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/business">business </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/entertainment">entertainment </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/general">general </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/health">health </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/science">science </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/sports">sports </Link></li>
+<li className="nav-item"><Link className="nav-link active" aria-current="page" to="/technology">technology </Link></li>
+
+
+
+
+<Router>
+    <Navbar />
+    <Switch>
+      <Route exact path="/business">
+        <News
+          country={this.state.country}
+          category="business"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/entertainment">
+        <News
+          country={this.state.country}
+          category="entertainment"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/technology">
+        <News
+          country={this.state.country}
+          category="technology"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/sports">
+        <News
+          country={this.state.country}
+          category="sports"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/science">
+        <News
+          country={this.state.country}
+          category="science"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/health">
+        <News
+          country={this.state.country}
+          category="health"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+      <Route exact path="/general">
+        <News
+          country={this.state.country}
+          category="general"
+          pageSize={this.state.pageSize}
+        />
+      </Route>
+    </Switch>
+  </Router>
